@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name" translatable="false">氧OS定制器</string>
     <!-- Xposed Description -->
-    <string name="xposeddescription">自定义OxygenOs</string>
+    <string name="xposeddescription">定制氧OS</string>
     <!-- Preferences Strings -->
     <string name="default_value">默认</string>
     <string name="settingslib_learn_more_text">了解更多</string>
@@ -13,8 +14,47 @@
     <string name="opt_selected2">已选择: %s%s</string>
     <string name="requires_sysui_restart">这个选择需要系统界面重启\n点击菜单来重启</string>
     <!-- Onboarding -->
+    <string name="init_module_installation">正在初始化设置</string>
+    <string name="step">步骤</string>
+    <string name="module_installation_step1">创建模块外壳</string>
+    <string name="module_installation_step2">提取必要文件</string>
+    <string name="module_installation_step3">创建覆盖 APKs</string>
+    <string name="module_installation_step4">对齐覆盖 APKs</string>
+    <string name="module_installation_step5">签名覆盖 APKs</string>
+    <string name="module_installation_step6">清理缓存目录</string>
+    <string name="onboarding_title_1">对原生UI感到厌倦了吗?</string>
+    <string name="onboarding_subtitle_1">让我们开始按照您的喜好定制一切.</string>
+    <string name="onboarding_desc_1">摆脱现有的单调 UI – 个性化定制每个细节以符合您的风格偏好.</string>
+    <string name="onboarding_title_2">我的设备是否受支持?</string>
+    <string name="onboarding_subtitle_2">氧OS定制器支持基于氧OS的ROM.</string>
+    <string name="onboarding_desc_2">兼容所有基于氧OS的ROM, 确保对Android设备的广泛支持.</string>
+    <string name="onboarding_title_3">让我们现在就开始吧?</string>
+    <string name="onboarding_subtitle_3">氧OS定制器正在进行一些内部工作的时候了.</string>
+    <string name="onboarding_desc_3">启动内部任务, 意味着必要工作启动. 准备开始?</string>
+    <string name="need_storage_perm_title">需要存储权限</string>
+    <string name="need_storage_perm_desc">需要存储权限构建一些必要的文件.</string>
+    <string name="compatible_root_not_found_title">找不到兼容的Root方法</string>
+    <string name="compatible_root_not_found_desc">请使用主流的Root方案以继续.</string>
+    <string name="root_not_found_title">无法访问Root权限</string>
+    <string name="root_not_found_desc">看起来您的设备未获取Root权限!</string>
+    <string name="need_reboot_title">需重启设备</string>
+    <string name="need_reboot_desc">重启设备以使所有文件就位.</string>
+    <string name="installation_failed_title">哎呀出错了</string>
+    <string name="installation_failed_desc">日志已保存在Documents文件夹中.</string>
+    <string name="logs">日志</string>
+    <string name="toast_skipped_installation">跳过安装. 某些功能可能无法正常运行.</string>
     <!-- Buttons -->
     <string name="btn_select">选择</string>
+    <string name="btn_skip">跳过</string>
+    <string name="btn_next">下一步</string>
+    <string name="btn_back">返回</string>
+    <string name="btn_lets_go">我们开始吧</string>
+    <string name="btn_close">关闭</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_reboot_now">立即重启</string>
+    <string name="btn_reboot">重启</string>
+    <string name="btn_enable">启用</string>
+    <string name="btn_disable">禁用</string>
     <string name="btn_apply">应用</string>
     <!-- Dialogs -->
     <string name="installing">正在安装...</string>
@@ -22,6 +62,7 @@
     <!-- Main Activity -->
     <!-- App kill Alert -->
     <string name="app_kill_alert_title">通知</string>
+    <string name="app_kill_alert_body">应用程序将立即关闭. 您可以点击新图标再次打开它</string>
     <string name="app_kill_ok_btn">确定</string>
     <!-- Reboot alert -->
     <string name="reboot_alert_body">需要重启系统才能应用设置</string>
@@ -38,7 +79,12 @@
     <string name="general_color_accent3">强调色 3</string>
     <string name="general_color_text1">文本 1</string>
     <string name="general_color_text2">文本 2</string>
+    <string name="sysui_restart_needed">需重启系统界面才能应用</string>
+    <string name="one_time_reboot_needed">重启您的设备!</string>
     <string name="gradient_left_right">从左到右</string>
+    <string name="gradient_top_bottom">从上到下</string>
+    <string name="gradient_tl_br">从左上到右下</string>
+    <string name="gradient_tr_bl">从右上到左下</string>
     <!-- Search Preference -->
     <string name="searchpreference_search">搜索...</string>
     <string name="searchpreference_clear">清空</string>
@@ -52,6 +98,7 @@
     <string name="restart_page_scope">仅重启此页面</string>
     <string name="restart_scope_message">你确定要重启除系统框架之外的所有作用域进程吗\n如果模块不工作，请使用此功能\n确保所有相关作用域都被选中！</string>
     <!-- NavBar Strings -->
+    <string name="navbar_ui">界面</string>
     <string name="navbar_mods">模组</string>
     <string name="navbar_hooks">钩子</string>
     <string name="navbar_settings">设置</string>
@@ -68,8 +115,16 @@
     <string name="general_on">开启</string>
     <string name="general_off">关闭</string>
     <string name="accent_color">强调色</string>
+    <string name="white_color">白色</string>
+    <string name="black_color">黑色</string>
+    <string name="custom_color">自定义颜色</string>
     <string name="battery_info_button_title">电池信息…</string>
     <!-- Statusbar Strings -->
+    <string name="statusbar_options">状态栏选项</string>
+    <string name="statusbar_double_tap_sleep">双击睡眠</string>
+    <string name="status_bar_toggle_brightness_title">亮度控制</string>
+    <string name="status_bar_toggle_brightness_summary">滑动状态栏以调整亮度</string>
+    <string name="statusbar_batterybar_title">电池条设置</string>
     <string name="statusbar_battery_icon_options">电池图标</string>
     <string name="statusbar_icons">状态栏图标</string>
     <!-- Statusbar notification strings -->
@@ -78,10 +133,29 @@
     <string name="statusbar_notifications_cat">状态栏通知</string>
     <string name="statusbar_use_app_icon">将应用图标用于通知</string>
     <string name="statusbar_notifications_transparency">通知栏透明度</string>
+    <string name="statusbar_notification_transparency">通知透明度</string>
+    <string name="statusbar_notification_transparency_value">透明度</string>
+    <string name="statusbar_notification_count">显示通知数</string>
+    <string name="statusbar_notifications_related">通知栏偏好</string>
+    <string name="remove_charging_complete_notification_title">移除充电完成通知</string>
+    <string name="remove_dev_mode_notification">移除开发者模式通知</string>
+    <string name="remove_flashlight_notification">移除手电筒通知</string>
+    <string name="remove_low_battery_notification">移除低电量通知</string>
+    <string name="notif_default_expansion_title">通知默认展开</string>
     <string name="notif_always_expand">总是展开</string>
     <string name="notif_always_collapse">总是折叠</string>
+    <string name="customize_clear_all_button">自定义清除全部按钮</string>
+    <string name="clear_all_link_bg_accent">将强调色作为背景颜色</string>
+    <string name="clear_all_bg_color">自定义背景颜色</string>
+    <string name="clear_all_link_bg_icon_accent">将强调色作为图标颜色</string>
+    <string name="clear_all_icon_color">自定义图标颜色</string>
     <!-- Statusbar Clock Strings -->
     <!-- Status bar - Clock -->
+    <string name="status_bar_clock_title">时钟 &amp; 日期</string>
+    <string name="status_bar_clock_summary">自定义时钟 &amp; 日期</string>
+    <string name="status_bar_clock_format_category">格式设置</string>
+    <string name="status_bar_clock_seconds_title">时钟显秒</string>
+    <string name="status_bar_clock_seconds_summary">状态栏时钟显秒</string>
     <string name="status_bar_clock_position_title">时钟样式</string>
     <string name="status_bar_clock_position_right">右侧</string>
     <string name="status_bar_clock_position_left">左侧</string>
@@ -89,8 +163,33 @@
     <string name="status_bar_clock_position_hidden">隐藏</string>
     <string name="status_bar_clock_hide_category">隐藏时钟</string>
     <string name="status_bar_clock_auto_hide_title">自动隐藏</string>
+    <string name="status_bar_clock_auto_hide_launcher_summary">当启动器可见时隐藏时钟</string>
+    <string name="status_bar_clock_auto_hide_summary">定期隐藏时钟</string>
+    <string name="status_bar_clock_auto_hide_hdur_title">隐藏期间</string>
+    <string name="status_bar_clock_auto_hide_hdur_summary">时钟隐藏的时间</string>
+    <string name="status_bar_clock_auto_hide_sdur_title">可见期间</string>
+    <string name="status_bar_clock_auto_hide_sdur_summary">时钟隐藏前的等待时间</string>
+    <string name="status_bar_am_pm_title">AM/PM样式</string>
+    <string name="status_bar_am_pm_normal">正常</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">隐藏</string>
+    <string name="status_bar_date_title">日期</string>
+    <string name="status_bar_date_none">隐藏</string>
+    <string name="status_bar_date_small">小</string>
     <string name="status_bar_date_style_normal">正常</string>
+    <string name="status_bar_date_format_title">日期格式</string>
+    <string name="status_bar_date_style">日期风格</string>
+    <string name="status_bar_date_style_normal">正常</string>
+    <string name="status_bar_date_style_lowercase">小写</string>
+    <string name="status_bar_date_style_uppercase">大写</string>
+    <string name="clock_date_position">日期位置</string>
+    <string name="clock_date_right">时钟右边</string>
+    <string name="clock_date_left">时钟左边</string>
+    <string name="clock_font_size_title">时钟字体大小</string>
     <string name="status_bar_clock_font_style_title">时钟字体样式</string>
+    <string name="status_bar_clock_color_title">时钟颜色</string>
+    <string name="status_bar_custom_clock_color_title">自定义时钟颜色</string>
+    <string name="status_bar_custom_clock_color_summary">时钟颜色</string>
     <!-- Status bar padding -->
     <!-- Battery Bar Strings -->
     <!-- Battery Icon Strings -->
